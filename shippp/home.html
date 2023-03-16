@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caribbean Cruise Booking</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <img src="498818.jpg" />
+
+    <div class="container">
+      <h1>Caribbean Cruise Booking</h1>
+      <form method="post" action="c.php">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination:</label>
+          <select id="destination" name="destination" required>
+            <option value="">Select Destination</option>
+            <option value="bahamas">Bahamas</option>
+            <option value="jamaica">Jamaica</option>
+            <option value="puerto-rico">Puerto Rico</option>
+            <option value="barbados">Barbados</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="depart-date">Departure Date:</label>
+          <input type="date" id="depart-date" name="depart-date" required />
+        </div>
+        <div class="form-group">
+          <label for="return-date">Return Date:</label>
+          <input type="date" id="return-date" name="return-date" required />
+        </div>
+        <button
+          onclick="window.location.href='pay.html'"
+          type="button"
+          class="btn"
+        >
+          Book Now
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
